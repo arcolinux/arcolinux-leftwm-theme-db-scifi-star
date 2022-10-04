@@ -22,7 +22,7 @@ if [ $keybLayout = "be" ]; then
   cp ~/.config/leftwm/config-azerty.ron ~/.config/leftwm/config.ron
 fi
 
-leftwm command "LoadTheme "$SCRIPTPATH"/config.ron"
+leftwm command "LoadTheme $SCRIPTPATH/theme.ron"
 
 # keybindings daemon
 # put your personal keybinds inside your theme and use those
@@ -73,9 +73,6 @@ if [ -x "$(command -v picom)" ]; then
 elif [ -x "$(command -v compton)" ]; then
   compton --config $HOME/.config/leftwm/themes/current/compton.conf &> /dev/null &
 fi
-
-# Set the theme.ron config
-leftwm command "LoadTheme $SCRIPTPATH/theme.ron"
 
 #mainbar
 index=0
