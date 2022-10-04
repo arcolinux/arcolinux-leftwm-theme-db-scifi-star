@@ -1,4 +1,2 @@
-#git-v2.sh
-LICENSE
-README.md
-#setup-our-git-credentials.sh
+git-*
+setup-our-git*
